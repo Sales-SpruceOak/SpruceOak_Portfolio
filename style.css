@@ -1,0 +1,57 @@
+i{
+    padding: 1vh;
+}
+
+section{
+    padding: 1em;
+}
+
+#Hero{
+    background-image: url(src/Background.png);
+    background-size:cover;
+    background-position: 0;
+    padding-top: 200px;
+    padding-bottom: 150px;
+}
+
+#Hero h1{
+    padding-bottom: 50px;
+}
+
+#sobrecontent {
+    display: flex;
+    flex-direction: row;
+}
+
+.imagemTipoUm {
+
+}
+
+.imagemTipoUm img{
+
+}
+
+.Bloco{
+    padding: 1em;
+    border-color: #495057;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#AllGames{
+    overflow: auto;
+    height: 40vh;
+}
+
+#HowPutHD{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
