@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" id="jesus" data-bs-theme=" ">
 <head>
     <!-- MetaDados -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Importações -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <script src="./app.js"></script>
     <!-- Importações Web -->
     <!-- Fontes -->
@@ -20,38 +20,39 @@
     <link rel="shortcut icon" href="./src/ICON.png">
     <title>Meu Portifólio</title>
 </head>
-<!-- Body com tema Dark -->
-<body data-bs-theme="dark">
+<!-- Body -->
+<body>
     <!-- Cabeçalho -->
     <header>
-          <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+        <!-- Nav -->
+          <nav class="navbar fixed-top navbar-expand-lg bg-primary" data-bs-theme="dark">
             <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                    <img src="./src/SICON.png" alt="SpruceOak's Icon" width="30" height="30">
-            </a>
-              <a class="navbar-brand" href="#">SpruceOak</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+              <a class="navbar-brand" href="#">
+                      <img id="iconHeader" src="./src/SICON.png" alt="SpruceOak's Icon" width="30" height="30">
+              </a>
+                <a class="navbar-brand" href="#">SpruceOak</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"  data-bs-theme="dark">
+              <span class="navbar-toggler-icon"></span>
+            </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Início  </a>
-                      </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#">Sobre</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Designs</a>
+                        <a class="nav-link" href="#">Cards</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Páginas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Componentes</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#">Artes</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link disabled" aria-disabled="true">Músicas</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Páginas</a>
                       </li>
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -64,46 +65,83 @@
                         </ul>
                       </li>
                 </ul>
-                <form class="d-flex" role="search">
+                <form class="d-flex" role="search" data-bs-theme="light">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
+                  <button class="btn btn-outline-light" type="submit">Search</button>
                 </form>
+                <div class="redes">
+                  <a href="">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="">
+                    <i class="bi bi-discord"></i>
+                  </a>
+                  <a href="">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                  <a href="">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
               </div>
             </div>
           </nav>
     </header>
+
+    <!-- Botão de Tema -->
+    <button class="bg-primary bg-gradient" onclick="swapTheme()" id="myBtn"><i class="bi bi-mask"></i></button>
+
     <!-- Sessão I -->
     <section id="Hero">
         <div class="container">
             <h1>Bem vindo ao meu<br>Portifólio</h1>
+            <p>Aqui você verá o resultado<br>dos meus melhores<br>serviços</p>
             <a href="#Sobre">
-                <button type="button" class="btn btn-primary">
+                <button type="button" class="btn btn-primary bg-gradient">
                     Iniciar!<i class="bi bi-box-arrow-up-right"></i></button>
             </div>
             </a>
     </section>
-    <section id="Sobre">
-        <div class="container" id="sobrecontent">
-            <div class="textoSobre">
-                <h2>Sobre Mim</h2>
-                <p>Eae! Este é o meu "Sobre Mim"<br>Meio genérico, não?</p>
-                <p>Esta é apenas a primeira versão do meu portifólio. Futuramente ela estará bem louca!<br>Meu nome é Luiz Guilherme Sales da Cruz, um nome grande, mas pode me chamar só de Sales!<br>Sou um entusiasta da área de tecnologia, especialmente na área de desenvolvimento. Desenvolvimento de quê? Ah, de tudo um muito!</p>
-                <p>Sou um artísta autônomo e o que mais gosto de fazer é produzir, desenvolver e customizar páginas!<br>Tenho atualmente 19 anos e embora me pareça meio quieto, sou bem descontraído!</p>
-            </div>
-            <div class="imagemTipoUm"><img src=" " alt="SobreIMG "></div>
-        </div>
-    </section>
-    <section id="ComoColocarHD">
-       <div class="container">
 
+    <!-- Sessão II -->
+    <section id="Sobre">
+        <div class="container">
+          <h2>Sobre Mim</h2>
+          <div class="content" id="sobrecontent"> 
+            <div class="textoSobre">
+              <p>Eae, sou Sales e trabalho com arte e tecnologia!</p>
+              <p>Você provavelmente veio aqui pelo meu currículo ou pelo meu website. Vou apresentar
+                um pouco sobre meu trabalho e minhas competências em ambas as áreas.
+              </p>
+            </div>
+            <div class="cardSobre">
+              <div class="card" style="width: 18rem;">
+                <div class="imagensCardSobre">
+                  <img src="..." class="card-img-top" id="bannerCardSobre" alt="...">
+                  <img src="" id="profileCardSobre" alt="">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Sales</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
     </section>
+
+    <!-- Sessão III -->
+        <section id="Cards">
+          <div class="container" id="sobrecontent">
+            <h2>Cards</h2>
+          </div>
+        </section>
     <!-- Rodapé -->
     <footer>
         <div class="container">
             <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
                 <div class="col-md-4 d-flex align-items-center">
-                  <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 SpruceOak. Todos os Direitos Reservados.</span>
+                  <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Luiz G. Sales da Cruz. Todos os Direitos Reservados.</span>
                 </div>
                 <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
                     <i class="bi bi-github"></i>
