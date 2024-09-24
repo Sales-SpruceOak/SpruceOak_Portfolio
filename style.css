@@ -50,9 +50,39 @@ section{
     padding-bottom: 40px;
 }
 
-#sobrecontent {
+.sobreContent {
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
+    justify-content: space-between;
+    gap: 10vh;
+}
+.cardSobre{
+    text-align: center;
+}
+
+.containerButton{
+    padding-bottom: 1em;   
+}
+
+.profileCardSobreContainer{
+    position: relative;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#profileCardSobre {
+    display: block;
+    position:absolute;
+    height: 100px;
+}
+
+.card-title{
+    padding-top: 50px;
+}
+
+.card-text{
+    font-size:12px;
 }
 
 .Bloco{
@@ -67,4 +97,15 @@ section{
 h2 {
     padding-top: 1em;
     padding-bottom: 1em;
+}
+
+@media only screen and (max-width:641px) {
+    .sobreContent {
+        display: flex;
+        flex-direction: column;
+    }
+    .cardSobre {
+        display: flex;
+        justify-content: center;
+    }
 }

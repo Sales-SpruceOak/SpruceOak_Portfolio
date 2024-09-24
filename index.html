@@ -1,156 +1,208 @@
 <!DOCTYPE html>
 <html lang="pt-br" id="jesus" data-bs-theme=" ">
+
 <head>
-    <!-- MetaDados -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Importações -->
-    <link rel="stylesheet" href="./style.css">
-    <script src="./app.js"></script>
-    <!-- Importações Web -->
-    <!-- Fontes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- Customização -->
-    <link rel="shortcut icon" href="./src/ICON.png">
-    <title>Meu Portifólio</title>
+  <!-- MetaDados -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Importações -->
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js"></script>
+  <!-- Importações Web -->
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+    rel="stylesheet">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Tilt Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"
+    integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Customização -->
+  <link rel="shortcut icon" href="./src/ICON.png">
+  <title>Meu Portifólio</title>
 </head>
 <!-- Body -->
+
 <body>
-    <!-- Cabeçalho -->
-    <header>
-        <!-- Nav -->
-          <nav class="navbar fixed-top navbar-expand-lg bg-primary" data-bs-theme="dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                      <img id="iconHeader" src="./src/SICON.png" alt="SpruceOak's Icon" width="30" height="30">
+  <!-- Cabeçalho -->
+  <header>
+    <!-- Nav -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-primary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img id="iconHeader" src="./src/SICON.png" alt="SpruceOak's Icon" width="30" height="30">
+        </a>
+        <a class="navbar-brand" href="#">SpruceOak</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+          data-bs-theme="dark">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Páginas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Componentes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Artes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Músicas</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Projetos
               </a>
-                <a class="navbar-brand" href="#">SpruceOak</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"  data-bs-theme="dark">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Cards</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Páginas</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Componentes</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Artes</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Músicas</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Projetos
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Catálogo de Jogos</a></li>
-                          <li><a class="dropdown-item" href="#">Catálogo de Mangás</a></li>
-                          <li><a class="dropdown-item" href="#">Pressure HQ</a></li>
-                        </ul>
-                      </li>
-                </ul>
-                <form class="d-flex" role="search" data-bs-theme="light">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-light" type="submit">Search</button>
-                </form>
-                <div class="redes">
-                  <a href="">
-                    <i class="bi bi-github"></i>
-                  </a>
-                  <a href="">
-                    <i class="bi bi-discord"></i>
-                  </a>
-                  <a href="">
-                    <i class="bi bi-instagram"></i>
-                  </a>
-                  <a href="">
-                    <i class="bi bi-linkedin"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </nav>
-    </header>
-
-    <!-- Botão de Tema -->
-    <button class="bg-primary bg-gradient" onclick="swapTheme()" id="myBtn"><i class="bi bi-mask"></i></button>
-
-    <!-- Sessão I -->
-    <section id="Hero">
-        <div class="container">
-            <h1>Bem vindo ao meu<br>Portifólio</h1>
-            <p>Aqui você verá o resultado<br>dos meus melhores<br>serviços</p>
-            <a href="#Sobre">
-                <button type="button" class="btn btn-primary bg-gradient">
-                    Iniciar!<i class="bi bi-box-arrow-up-right"></i></button>
-            </div>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Catálogo de Jogos</a></li>
+                <li><a class="dropdown-item" href="#">Catálogo de Mangás</a></li>
+                <li><a class="dropdown-item" href="#">Pressure HQ</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search" data-bs-theme="light">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+          <div class="redes">
+            <a href="">
+              <i class="bi bi-github"></i>
             </a>
-    </section>
+            <a href="">
+              <i class="bi bi-discord"></i>
+            </a>
+            <a href="">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-    <!-- Sessão II -->
-    <section id="Sobre">
-        <div class="container">
-          <h2>Sobre Mim</h2>
-          <div class="content" id="sobrecontent"> 
-            <div class="textoSobre">
-              <p>Eae, sou Sales e trabalho com arte e tecnologia!</p>
-              <p>Você provavelmente veio aqui pelo meu currículo ou pelo meu website. Vou apresentar
-                um pouco sobre meu trabalho e minhas competências em ambas as áreas.
-              </p>
-            </div>
-            <div class="cardSobre">
-              <div class="card" style="width: 18rem;">
-                <div class="imagensCardSobre">
-                  <img src="..." class="card-img-top" id="bannerCardSobre" alt="...">
-                  <img src="" id="profileCardSobre" alt="">
+  <!-- Botão de Tema -->
+  <button class="bg-primary bg-gradient" onclick="swapTheme()" id="myBtn"><i class="bi bi-mask"></i></button>
+
+  <!-- Sessão I -->
+  <section id="Hero">
+    <div class="container">
+      <h1>Bem vindo ao meu<br>Portifólio</h1>
+      <p>Aqui você verá o resultado<br>dos meus melhores<br>serviços</p>
+      <a href="#Sobre">
+        <button type="button" class="btn btn-primary bg-gradient">
+          Iniciar!<i class="bi bi-box-arrow-up-right"></i></button>
+    </div>
+    </a>
+  </section>
+
+  <!-- Sessão II -->
+  <section id="Sobre">
+    <div class="container">
+      <h2>Sobre Mim</h2>
+      <div class="content">
+        <div class="sobreContent">
+          <div class="textoSobre">
+            <p>Eae, sou Sales e trabalho com arte e tecnologia!</p>
+            <p>Você provavelmente veio aqui pelo meu currículo ou pelo meu website. Vou apresentar
+              um pouco sobre meu trabalho e minhas competências em ambas as áreas.
+            </p>
+            <p>
+              Nesta página, além de meu portifólio, também falarei um pouco sobre mim.
+            </p>
+            <p>
+              Muitos dos serviços que estão nessa página, fiz apenas por diversão enquanto
+              explorava as funcionalidades dessa profissão que te permite criar e brincar
+              com as ferramentas que tem.
+            </p>
+            <p>
+              Gosto bastante de jogos e filmes antigos. Sou do tipo Retrô e curto os mais
+              variados gêneros musicais.
+            </p>
+            <p>
+              Me concentro melhor enquanto ouço música, como estou fazendo neste exato momento em que
+              construo este portifólio!
+            </p>
+          </div>
+          <div class="cardSobre">
+            <div class="card" style="width: 200px;">
+              <div class="imagensCardSobre">
+                <div class="profileCardSobreContainer">
+                  <img src="./src/iconCard.png" id="profileCardSobre" alt=".">
                 </div>
-                <div class="card-body">
-                  <h5 class="card-title">Sales</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <img src="./src/bannerCard.jpg" class="card-img-top" id="bannerCardSobre" alt=".">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Sales</h5>
+                <p class="card-text">Programador Web e Artísta Autônomo</p>
+                <div class="containerButton">
+                  <button type="button" class="btn btn-primary btn-sm">Seguir</button>
+                </div>
+                <div class="redes">
+                  <i class="bi bi-github"></i>
+                  <i class="bi bi-discord"></i>
+                  <i class="bi bi-instagram"></i>
+                  <i class="bi bi-linkedin"></i>
                 </div>
               </div>
             </div>
           </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Sessão III -->
-        <section id="Cards">
-          <div class="container" id="sobrecontent">
-            <h2>Cards</h2>
-          </div>
-        </section>
-    <!-- Rodapé -->
-    <footer>
-        <div class="container">
-            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-                <div class="col-md-4 d-flex align-items-center">
-                  <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Luiz G. Sales da Cruz. Todos os Direitos Reservados.</span>
-                </div>
-                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                    <i class="bi bi-github"></i>
-                    <i class="bi bi-discord"></i>
-                    <i class="bi bi-instagram"></i>
-                    <i class="bi bi-linkedin"></i>
-                </ul>
-            </footer>
+  <!-- Sessão III -->
+  <section id="Cards">
+    <div class="container" id="sobrecontent">
+      <h2>Cards</h2>
+    </div>
+  </section>
+  <!-- Rodapé -->
+  <footer>
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Luiz G. Sales da Cruz. Todos os Direitos
+            Reservados.</span>
         </div>
-    </footer>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <i class="bi bi-github"></i>
+          <i class="bi bi-discord"></i>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-linkedin"></i>
+        </ul>
+      </footer>
+    </div>
+  </footer>
+  <!-- Efeito Tilt -->
+  <script>
+    VanillaTilt.init(document.querySelector(".card"), {
+      max: 25,
+      speed: 400,
+      glare: true,
+      gyroscope: true,
+      "max-glare": 0.5
+    });
+  </script>
 </body>
+
 </html>
