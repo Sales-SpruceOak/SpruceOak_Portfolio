@@ -6,6 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Importações -->
+  <link rel="stylesheet" href="./src/portfolio/carrossel/carrossel.css">
   <link rel="stylesheet" href="./style.css">
   <script src="./app.js"></script>
   <!-- Importações Web -->
@@ -25,7 +26,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- Customização -->
   <link rel="shortcut icon" href="./src/ICON.png">
-  <title>Meu Portifólio</title>
+  <title>Meu Portfólio</title>
 </head>
 <!-- Body -->
 
@@ -47,19 +48,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">Sobre</a>
+              <a class="nav-link" href="#Sobre">Sobre</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Cards</a>
+              <a class="nav-link disabled" aria-disabled="true">Cards</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Páginas</a>
+              <a class="nav-link" href="#Paginas">Páginas</a>
             </li>
             <li class="nav-item">
               <a class="nav-link disabled" aria-disabled="true">Componentes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Artes</a>
+              <a class="nav-link" href="#Artes">Artes</a>
             </li>
             <li class="nav-item">
               <a class="nav-link disabled" aria-disabled="true">Músicas</a>
@@ -105,11 +106,11 @@
   <!-- Sessão I -->
   <section id="Hero">
     <div class="container">
-      <h1>Bem vindo ao meu<br>Portifólio</h1>
+      <h1>Bem vindo ao meu<br>Portfólio</h1>
       <p>Aqui você verá o resultado<br>dos meus melhores<br>serviços</p>
       <a href="#Sobre">
         <button type="button" class="btn btn-primary bg-gradient">
-          Iniciar!<i class="bi bi-box-arrow-up-right"></i></button>
+          Começar!</button>
     </div>
     </a>
   </section>
@@ -117,29 +118,21 @@
   <!-- Sessão II -->
   <section id="Sobre">
     <div class="container">
-      <h2>Sobre Mim</h2>
       <div class="content">
         <div class="sobreContent">
           <div class="textoSobre">
+            <h2>Sobre Mim</h2>
             <p>Eae, sou Sales e trabalho com arte e tecnologia!</p>
             <p>Você provavelmente veio aqui pelo meu currículo ou pelo meu website. Vou apresentar
               um pouco sobre meu trabalho e minhas competências em ambas as áreas.
             </p>
             <p>
-              Nesta página, além de meu portifólio, também falarei um pouco sobre mim.
+              Nesta página, além de meu portfólio, também falarei um pouco sobre mim.
             </p>
             <p>
               Muitos dos serviços que estão nessa página, fiz apenas por diversão enquanto
               explorava as funcionalidades dessa profissão que te permite criar e brincar
               com as ferramentas que tem.
-            </p>
-            <p>
-              Gosto bastante de jogos e filmes antigos. Sou do tipo Retrô e curto os mais
-              variados gêneros musicais.
-            </p>
-            <p>
-              Me concentro melhor enquanto ouço música, como estou fazendo neste exato momento em que
-              construo este portifólio!
             </p>
           </div>
           <div class="cardSobre">
@@ -151,10 +144,13 @@
                 <img src="./src/bannerCard.jpg" class="card-img-top" id="bannerCardSobre" alt=".">
               </div>
               <div class="card-body">
-                <h5 class="card-title">Sales</h5>
+                <h5 class="card-title" id="cardSobreTitle">Sales</h5>
                 <p class="card-text">Programador Web e Artísta Autônomo</p>
                 <div class="containerButton">
-                  <button type="button" class="btn btn-primary btn-sm">Seguir</button>
+                  <a href="./src/Curriculo.pdf">
+                    <button type="button" class="btn btn-primary btn-sm">Currículo <i
+                        class="bi bi-box-arrow-up-right"></i></button>
+                  </a>
                 </div>
                 <div class="redes">
                   <i class="bi bi-github"></i>
@@ -171,9 +167,145 @@
   </section>
 
   <!-- Sessão III -->
-  <section id="Cards">
-    <div class="container" id="sobrecontent">
-      <h2>Cards</h2>
+  <section id="Portfolio">
+    <div class="container">
+      <h1>Portfólio</h1>
+      <p>Aqui algumas imagens dos meus principais projetos.</p>
+      <p>Não são todas as imagens que representam sua versão final. O pouco que aqui se encontra, resume
+        boa parte da minha competência na área.
+      </p>
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-theme="light">
+            <div class="carrosselItens " id="carrosselItemI">
+              <div class="capFilter"></div>
+            </div>
+            <div class="carousel-caption">
+              <h5>Fend2</h5>
+              <p>Projeto final da disciplina de Front-end II.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carrosselItens " id="carrosselItemII">
+              <div class="capFilter"></div>
+            </div>
+            <div class="carousel-caption">
+              <h5>CSS Zen Garden</h5>
+              <p>Meu CSS Zen Garden feito em estilo do Windows XP.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carrosselItens " id="carrosselItemIII">
+              <div class="capFilter"></div>
+            </div>
+            <div class="carousel-caption">
+              <h5>CHWAR</h5>
+              <p>Página feita para um webgrupo de jogos.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carrosselItens " id="carrosselItemIV">
+              <div class="capFilter"></div>
+            </div>
+            <div class="carousel-caption">
+              <h5>Generic Games</h5>
+              <p>Projeto final da disciplina de Aplicações Web.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- Sessão IV -->
+  <section id="Paginas">
+    <div class="container" id="paginascontent">
+      <h2>Páginas</h2>
+      <p class="cardTextPage">Aqui estão algumas páginas web que criei enquanto estudava programação web.<br>Algumas
+        páginas são mais antigas e contém alguns bugs enquanto outras ainda estão em desenvolvimento</p>
+      <div class="pagesContainer">
+        <!-- Page I-->
+        <div class="card" style="width: 18rem;">
+          <a href="https://donut6466.github.io/projeto-final-de-marahubi/">
+            <img src="./src/portfolio/carrossel/pageFend2.png" class="card-img-top" alt=".">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Fend2</h5>
+            <p class="card-text">Projeto final da disciplina de Front-end II. Fiz esta página atuando como uma grande
+              empresa.</p>
+            <a href="https://donut6466.github.io/projeto-final-de-marahubi/" class="btn btn-primary">Visitar<i
+                class="bi bi-box-arrow-up-right"></i></a>
+          </div>
+        </div>
+        <!-- Page II -->
+        <div class="card" style="width: 18rem;">
+          <a href="https://donut6466.github.io/fe1-zen-garden/">
+            <img src="./src/portfolio/carrossel/pageZenGarden.png" class="card-img-top" alt=".">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">CSS Zen Garden</h5>
+            <p class="card-text">Simplesmente meu Zen Garden. Um desafio que envolve modificar uma página apenas pelo
+              CSS.</p>
+            <a href="https://donut6466.github.io/fe1-zen-garden/" class="btn btn-primary">Visitar<i
+                class="bi bi-box-arrow-up-right"></i></a>
+          </div>
+        </div>
+        <!-- Page III -->
+        <div class="card" style="width: 18rem;">
+          <a href="https://chaoswarriors.neocities.org/">
+            <img src="./src/portfolio/carrossel/pageCHWAR.png" class="card-img-top" alt=".">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">CHWAR</h5>
+            <p class="card-text">Página que fiz para um grupo web. Grupo de jogadores onlines denominados "Chaos
+              Warriors".</p>
+            <a href="https://chaoswarriors.neocities.org/" class="btn btn-primary">Visitar<i
+                class="bi bi-box-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Sessão V -->
+  <section id="Artes">
+    <div class="container">
+      <h2>Artes</h2>
+      <p>Nesta sessão, você verá minhas artes visuais!<br>Produzo dos mais diversos tipos de arte, 3D e 2D.
+        minha arte está em constante evolução, por isso, as artes a seguir são tanto atuais quanto antigas. </p>
+      <div class="polaroidContainer">
+        <img class="polaroid" src="./src/portfolio/polaroids/DesenhoPolaroid (1).png" alt=".">
+        <img class="polaroid" src="./src/portfolio/polaroids/DesenhoPolaroid (2).png" alt=".">
+        <img class="polaroid" src="./src/portfolio/polaroids/DesenhoPolaroid (3).png" alt=".">
+        <img class="polaroid" src="./src/portfolio/polaroids/DesenhoPolaroid (4).png" alt=".">
+        <img class="polaroid" src="./src/portfolio/polaroids/DesenhoPolaroid (5).png" alt=".">
+        <img class="polaroid" src="./src/portfolio/polaroids/DesenhoPolaroid (6).png" alt=".">
+        <img class="polaroid" src="./src/portfolio/polaroids/DesenhoPolaroid (7).png" alt=".">
+        <img class="polaroid" src="./src/portfolio/polaroids/DesenhoPolaroid (8).png" alt=".">
+        <img class="polaroid" src="./src/portfolio/polaroids/DesenhoPolaroid (9).png" alt=".">
+        <img class="polaroid" src="./src/portfolio/polaroids/DesenhoPolaroid (10).png" alt=".">
+        <img class="polaroid" src="./src/portfolio/polaroids/DesenhoPolaroid (11).png" alt=".">
+        <img class="polaroid" src="./src/portfolio/polaroids/DesenhoPolaroid (12).png" alt=".">
+        <img class="polaroid" src="./src/portfolio/polaroids/DesenhoPolaroid (13).png" alt=".">
+      </div>
     </div>
   </section>
   <!-- Rodapé -->
@@ -200,10 +332,19 @@
       speed: 400,
       glare: true,
       gyroscope: true,
-      gyroscopeMinAngleX:     -45,
-    gyroscopeMaxAngleX:     45,
-    gyroscopeMinAngleY:     -45,
-    gyroscopeMaxAngleY:     45,
+      gyroscopeMinAngleX: -45,
+      gyroscopeMaxAngleX: 45,
+      gyroscopeMinAngleY: -45,
+      gyroscopeMaxAngleY: 45,
+      "max-glare": 0.5
+    });
+  </script>
+  <!-- Outro Tilt -->
+  <script>
+    VanillaTilt.init(document.querySelectorAll(".polaroid"), {
+      max: 25,
+      speed: 400,
+      glare: true,
       "max-glare": 0.5
     });
   </script>

@@ -5,7 +5,9 @@ i{
 header{
     background-color: #0D6EFD;
 }
-
+nav{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .redes a{
     text-decoration: none;
 }
@@ -13,7 +15,7 @@ header{
 #myBtn { /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
+    right: 10px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
@@ -54,14 +56,16 @@ section{
     display: flex;
     flex-direction:row;
     justify-content: space-between;
+    align-items: center;
     gap: 10vh;
 }
 .cardSobre{
+    padding-top: 50px;
     text-align: center;
 }
 
 .containerButton{
-    padding-bottom: 1em;   
+    padding-bottom: 1em;
 }
 
 .profileCardSobreContainer{
@@ -77,12 +81,26 @@ section{
     height: 100px;
 }
 
-.card-title{
+#cardSobreTitle{
     padding-top: 50px;
 }
 
 .card-text{
     font-size:12px;
+}
+
+.pagesContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cardTextPage{
+    padding-bottom: 50px;
 }
 
 .Bloco{
@@ -99,13 +117,37 @@ h2 {
     padding-bottom: 1em;
 }
 
+.polaroidContainer{
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.polaroid{
+    height: 10rem;
+}
+
 @media only screen and (max-width:641px) {
     .sobreContent {
         display: flex;
         flex-direction: column;
+        gap: 0;
     }
+
     .cardSobre {
+        padding-top: 0;
+    }
+
+    .pagesContainer{
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .pagesContainer .card .btn {
+        display: none;
     }
 }

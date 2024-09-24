@@ -1,0 +1,113 @@
+.carousel-item {
+    display: block;
+    height: 600px;
+    width: 100vh;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.carrosselItens {
+    display: block;
+    position: relative;
+    top: 0;
+    height: 600px;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.carousel-caption{
+    display: block;
+}
+
+.carousel-caption h5 {
+    color: white;
+}
+
+.carousel-caption p {
+    color: white;
+}
+
+.capFilter{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: 40%;
+    width: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(253,187,45,0) 100%);
+    border-radius: 20px;
+}
+
+#carrosselItemI {
+    display: block;
+    background-image: url(pageFend2.png);
+}
+
+#carrosselItemII {
+    display: block;
+    background-image: url(pageZenGarden.png);
+}
+
+#carrosselItemIII {
+    display: block;
+    background-image: url(pageCHWAR.png);
+}
+
+#carrosselItemIV {
+    display: block;
+    background-image: url(pageCatalogoJogos.png);
+}
+
+
+@media only screen and (min-width:1px) and (max-width:641px) {
+    .carousel-item {
+        display: block;
+        height: 200px;
+        width: 100vh;
+    }
+
+    .carrosselItens {
+        display: block;
+        position: relative;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-size:cover;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+    }
+
+    .carousel-indicators{
+        content-visibility: hidden;
+    }
+    .carousel-caption{
+        height: 80px;
+        font-size: smaller;
+    }
+    .carousel-caption h1{
+        height: 10px;
+        font-size: small;
+    }
+}
+
+@media only screen and (min-width:642px) and (max-width:1000px) {
+    .carousel-item {
+        display: block;
+        height: 50vh;
+        width: 100vh;
+    }
+
+    .carrosselItens {
+        display: block;
+        position: relative;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
